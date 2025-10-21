@@ -5,10 +5,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server-llm-proxy.mjs"
   },
-  "description": "Proxy Server for Decker to send messages to ChatGPT aka. \"chatty\"",
-  "main": "server.mjs",
+  "description": "Proxy Server for Decker to send messages to an LLM aka. \"chatty\"",
+  "main": "server-llm-proxy.mjs",
   "keywords": [
     "chatbot"
   ],
