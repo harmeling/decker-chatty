@@ -5,10 +5,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node server-llm-proxy.mjs"
+    "start": "node server-llm-proxy-history.mjs"
   },
   "description": "Proxy Server for Decker to send messages to an LLM aka. \"chatty\"",
-  "main": "server-llm-proxy.mjs",
+  "main": "server-llm-proxy-history.mjs",
   "keywords": [
     "chatbot"
   ],

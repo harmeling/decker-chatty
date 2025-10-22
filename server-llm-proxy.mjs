@@ -33,8 +33,9 @@ app.post("/chatty", async (req, res) => {
       ? body.input
       : body.input
         ? [{ role: "user", content: String(body.input) }]
-        : [];
-
+            : [];
+    console.log(new Date().toISOString());
+    console.log("before:", body);
     body = {
       stream: true,
       model: config.model,

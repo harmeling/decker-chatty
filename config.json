@@ -1,6 +1,6 @@
 {
   "apiKey": "75b837f37f4706619268bfa0b4a5085e",
   "endpoint": "https://chat-ai.academiccloud.de/v1",
-  "model": "meta-llama-3.1-8b-rag",
+  "model": "llama-3.1-sauerkrautlm-70b-instruct",
   "port": 3000
 }
