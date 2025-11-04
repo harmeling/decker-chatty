@@ -29,8 +29,9 @@ const setHistory = (id, msgs) => histories.set(id, msgs.slice(-MAX_MESSAGES));
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
 app.post("/chatty", async (req, res) => {
-  try {
-    const apiKey = config.apiKey;
+    try {
+        // load the API key from ~/.secrets/saia_api_key
+        const apiKey = fs.readFileSync(path.join(process.env.HOME, ".secrets", "saia_api_key"), "utf8").trim();
 
     // Conversation id comes from the client (previous_response_id).
     // If not provided (new chat), mint a fresh one and return it as response.id.

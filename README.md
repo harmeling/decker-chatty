@@ -26,3 +26,15 @@ Configure your reverse proxy to relay `https://` requests to the running service
 Just run on the server:
 
     sudo journalctl -u tutor.service
+
+# Restart everything
+
+sudo vim /etc/systemd/system/tutor.service
+sudo systemctl daemon-reload
+sudo systemctl restart tutor   # modify 'tutor' to your service name or server-llm-proxy-history.mjs
+
+# Get list of all models:
+
+```bash
+  curl -X POST --url https://chat-ai.academiccloud.de/v1/models --header 'Accept: application/json' --header 'Authorization: Bearer <api_key>' --header 'Content-Type: application/json'
+  ```
